@@ -64,6 +64,9 @@ sudo bash /tmp/installK8S.sh
 
 kubeadm token create --print-join-command 
 
+Note: Add this in the end -> --cri-socket unix:///var/run/cri-dockerd.sock --ignore-preflight-errors=all
+
+
     copy the kubeadm join token from master &
            ensure to add --cri-socket unix:///var/run/cri-dockerd.sock as below &
            ensure to add sudo 
