@@ -67,8 +67,7 @@ kind: Service
 metadata:
   name: app2-svc
   labels:
-    author: 
-      author: abhishek-balaji
+    author: abhishek-balaji
 spec:
   type: ClusterIP
   selector:
